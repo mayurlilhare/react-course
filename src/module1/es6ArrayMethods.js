@@ -57,5 +57,5 @@ export default function ES6ArrayMethods() {
         return e.age > 20;
     })
 
-    console.log(checkIfAllElmntSatisfy)
+    console.log(checkIfAllElmntSatisfy) //change
 };

@@ -2,7 +2,7 @@ export default function ES6ArrayMethods() {
     const personArray = [
         {
             name:"Person1",
-            age:30,
+            age:50,
             country:"India"
         },
         {
@@ -44,4 +44,18 @@ export default function ES6ArrayMethods() {
     )
 
     console.log("getAllSearch", getAllSearch)
+
+    // returns true if any element satisfy condition
+    let checkIfAnyElmntSatisfy = personArray.some(e=>{
+        return e.age > 40;
+    })
+
+    console.log(checkIfAnyElmntSatisfy)
+
+    // returns true all elements satisfies condition
+    let checkIfAllElmntSatisfy = personArray.every(e=>{
+        return e.age > 20;
+    })
+
+    console.log(checkIfAllElmntSatisfy)
 };
